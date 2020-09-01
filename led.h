@@ -9,7 +9,14 @@
 #define LED_H_
 
 #include <stdint.h>
+#include "stm32f303re.h"
 
-uint16_t sumValue(uint16_t a, uint16_t b);
+/* 
+    FUNCTION Prototypes
+*/
+void LED_Init(void);
+void LED_Deinit(void);
+void LED_On(void);
+void LED_Off(void);
 
 #endif /* LED_H_ */

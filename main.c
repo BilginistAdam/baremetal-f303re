@@ -15,14 +15,24 @@
 
 int main(void)
 {
-	uint16_t num1 = 1, num2 = 255;
-	uint16_t c = sumValue(num1, num2);
+  LED_Init();
   
 	while (1)
   {
-    /* code */
+    LED_On();
+    delay();
+    LED_Off();
+    delay();
   }
   
 
 	return 0;
+}
+
+void delay(void){
+  for (uint32_t i = 0; i < 500000; i++)
+  {
+    //Nothing
+  }
+  
 }

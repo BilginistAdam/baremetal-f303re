@@ -5,4 +5,6 @@
 #include <stdint.h>
 #include "led.h"
 
+void delay(void);
+
 #endif /* MAIN_H_ */
